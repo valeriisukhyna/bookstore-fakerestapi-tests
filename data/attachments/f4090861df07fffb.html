@@ -1,0 +1,35 @@
+<div>POST to https://fakerestapi.azurewebsites.net/api/v1/Books</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;id&quot;: 1200,
+    &quot;title&quot;: &quot;Gone with the Wind&quot;,
+    &quot;description&quot;: &quot;Cum ab ex sapiente aperiam quis voluptatem quasi.&quot;,
+    &quot;pageCount&quot;: 401,
+    &quot;excerpt&quot;: &quot;Optio suscipit non non voluptatibus quia provident quod. Eius sapiente quia aut consequuntur excepturi qui sit. Voluptatum molestiae neque. Asperiores aut delectus deserunt aut autem. Eos fugiat iste.&quot;,
+    &quot;publishDate&quot;: &quot;2011-04-15T06:39:55.632Z&quot;
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: */*</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;https://fakerestapi.azurewebsites.net/api/v1/Books&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;id&quot;: 1200,
+    &quot;title&quot;: &quot;Gone with the Wind&quot;,
+    &quot;description&quot;: &quot;Cum ab ex sapiente aperiam quis voluptatem quasi.&quot;,
+    &quot;pageCount&quot;: 401,
+    &quot;excerpt&quot;: &quot;Optio suscipit non non voluptatibus quia provident quod. Eius sapiente quia aut consequuntur excepturi qui sit. Voluptatum molestiae neque. Asperiores aut delectus deserunt aut autem. Eos fugiat iste.&quot;,
+    &quot;publishDate&quot;: &quot;2011-04-15T06:39:55.632Z&quot;
+}&#39;
+    </div>
+

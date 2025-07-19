@@ -1,0 +1,35 @@
+<div>PUT to https://fakerestapi.azurewebsites.net/api/v1/Books/1200</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;id&quot;: 1200,
+    &quot;title&quot;: &quot;I Will Fear No Evil&quot;,
+    &quot;description&quot;: &quot;Qui accusantium veritatis.&quot;,
+    &quot;pageCount&quot;: 65,
+    &quot;excerpt&quot;: &quot;Ut ipsam inventore vel ipsam beatae. Non et minus qui quis exercitationem. Et sed maxime cumque. Eveniet rem et labore.&quot;,
+    &quot;publishDate&quot;: &quot;2001-08-14T02:14:16.431Z&quot;
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: */*</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X PUT &#39;https://fakerestapi.azurewebsites.net/api/v1/Books/1200&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;id&quot;: 1200,
+    &quot;title&quot;: &quot;I Will Fear No Evil&quot;,
+    &quot;description&quot;: &quot;Qui accusantium veritatis.&quot;,
+    &quot;pageCount&quot;: 65,
+    &quot;excerpt&quot;: &quot;Ut ipsam inventore vel ipsam beatae. Non et minus qui quis exercitationem. Et sed maxime cumque. Eveniet rem et labore.&quot;,
+    &quot;publishDate&quot;: &quot;2001-08-14T02:14:16.431Z&quot;
+}&#39;
+    </div>
+

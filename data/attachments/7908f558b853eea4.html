@@ -1,0 +1,35 @@
+<div>POST to https://fakerestapi.azurewebsites.net/api/v1/Books</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;id&quot;: 1200,
+    &quot;title&quot;: &quot;Jacob Have I Loved&quot;,
+    &quot;description&quot;: &quot;Ab sit repellat corporis.&quot;,
+    &quot;pageCount&quot;: 891,
+    &quot;excerpt&quot;: &quot;Alias neque dolorem pariatur. Rerum facere praesentium. Voluptatem et repudiandae et quo quibusdam. Voluptas repellendus et veritatis laborum esse sed at. Atque voluptas doloremque veritatis maiores nihil.&quot;,
+    &quot;publishDate&quot;: &quot;1998-12-17T12:51:13.937Z&quot;
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: */*</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;https://fakerestapi.azurewebsites.net/api/v1/Books&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;id&quot;: 1200,
+    &quot;title&quot;: &quot;Jacob Have I Loved&quot;,
+    &quot;description&quot;: &quot;Ab sit repellat corporis.&quot;,
+    &quot;pageCount&quot;: 891,
+    &quot;excerpt&quot;: &quot;Alias neque dolorem pariatur. Rerum facere praesentium. Voluptatem et repudiandae et quo quibusdam. Voluptas repellendus et veritatis laborum esse sed at. Atque voluptas doloremque veritatis maiores nihil.&quot;,
+    &quot;publishDate&quot;: &quot;1998-12-17T12:51:13.937Z&quot;
+}&#39;
+    </div>
+
