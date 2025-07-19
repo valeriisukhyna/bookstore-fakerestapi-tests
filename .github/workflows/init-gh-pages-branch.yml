@@ -1,0 +1,31 @@
+name: Init gh-pages branch
+
+on:
+  workflow_dispatch:
+
+jobs:
+  init-gh-pages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create empty gh-pages branch
+        run: |
+          git fetch origin
+          if git show-ref --quiet refs/heads/gh-pages; then
+            echo "gh-pages already exists — nothing to do"
+            exit 0
+          fi
+
+          echo "Creating gh-pages branch…"
+          git checkout --orphan gh-pages
+          git rm -rf .
+          echo "<h1>gh-pages initialized</h1>" > index.html
+          git add index.html
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Initialize gh-pages"
+          git push origin gh-pages
+          git checkout main
